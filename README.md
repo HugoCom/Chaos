@@ -1,4 +1,4 @@
-##### **Chaos is available on the Google Play Store** [Chaos](Link)
+##### **[Chaos](Link) is available on the Google Play Store**
 
 # Chaos
 Chaos application is a proximity social media allowing the members to publish in an anonymous way messages, photos, videos and events. The publications are visible to all the members situated in the same city. It is also possible to comment the publications, and to attribute them a score.
@@ -7,5 +7,5 @@ Every member possesses a score, characterizing its implication within the commun
 ### Diagrams
 You can find class diagram and use-case diagram in the Documents folder.
 
-#######
+######
 Developed and conceived by __Combe Hugo__ and __Paul-Antoine Denis__
