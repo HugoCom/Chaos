@@ -5,7 +5,7 @@ Chaos application is a proximity social media allowing the members to publish in
 Every member possesses a score, characterizing its implication within the community. For example, publish and receive positive votes on its publications will increase the score. On the other hands, to receive negative votes or even get its publications deleted by moderation will have a negative impact on your score.
 
 ### Diagrams
-[Class & Use-Case diagram](Documents/diagrams.mdj)
+[Class & Use-Case diagram](Documents/Diagrams.mdj)
 
 #####
 Developed and conceived by __Combe Hugo__ and __Paul-Antoine Denis__
