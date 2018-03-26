@@ -1,38 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Chaos</string>
 
     <string name="menu_account">Account</string>
 
-    <string name="welcome_title">Hi!</string>
+    <string name="welcome_title">Welcome !</string>
     <string name="welcome_txtIntro">This is a placeholder text to describe our application. Actually, I have nothing to say but I\'ll pretend I have to get a big fat paragraph. A cart is a vehicle designed for transport, using two wheels and normally pulled by one or a pair of draught animals. I think that\'s enough.</string>
-    <string name="welcome_txtJoinUs">Are you ready to join the party? Wonderful!</string>
-    <string name="welcome_txtLogin">You\'re already registered?</string>
+    <string name="welcome_txtJoinUs">Are you ready to join the party ? Wonderful !</string>
+    <string name="welcome_txtLogin">You\'re already registered ?</string>
     <string name="welcome_btnRegister">Sign up</string>
     <string name="welcome_btnLogin"><u>Log in</u></string>
 
-    <string name="signUp_lbTerms">I accept the Terms of Service.</string>
-    <string name="signUp_lbEmail">E-mail</string>
+    <string name="signUp_lbEmail">Email</string>
     <string name="signUp_lbPassword">Password</string>
     <string name="signUp_btnSignUp">Create account</string>
+    <string name="signUp_btnSignInRedirection">Oops, I already have an account</string>
 
     <string name="signIn_btnSignIn">Connect</string>
     <string name="signIn_btnForgotPassword">Forgot password</string>
+    <string name="signIn_btnSignUpRedirection">Oops, I don\'t have an account</string>
 
-    <string name="forgotPassword_sendEmail">Send e-mail</string>
+    <string name="forgotPassword_sendEmail">Send email</string>
 
-    <string name="account_loggedAs">Connected as:</string>
+    <string name="account_loggedAs">Connected as :</string>
     <string name="account_signOut">Logout</string>
 
     <string name="home_addPost">Add a Post</string>
     <string name="home_account">Account</string>
 
-    <string name="terms">Be nice with the others</string>
-    <string name="UserNotInBase">User not in the database</string>
-    <string name="likebutton">likeButton</string>
-    <string name="unlikebutton">unlikeButton</string>
-    <string name="errorSignInEmail">Enter valid email</string>
-    <string name="errorSignInPassword">Password must be at least 8 caracters</string>
-    <string name="errorSignInCheckbox">Please checked the Terms of Service</string>
-    <string name="createPost">Publish Post</string>
-    <string name="publishPost">Enter the text you want to publish</string>
+    <string name="createPost_createPost">Publish Post</string>
+    <string name="createPost_publishPost">Enter the text you want to publish</string>
+
+    <string name="toast_email">Please enter your email</string>
+    <string name="toast_password">Please enter your password</string>
+    <string name="toast_password_length">Password too short, should be at least 6 characters</string>
+    <string name="toast_authentification_failed">Authentication failed</string>
+    <string name="toast_user_not_logged">Couldn\'t register user in database because he\'s not logged in</string>
+    <string name="toast_post_to_long_part1">Your Post is too long (</string>
+    <string name="toast_post_to_long_part2">). 200 characters allowed</string>
+    <string name="toast_reset_instructions">We have sent you instructions to reset your password !</string>
+    <string name="toast_failed_reset_instructions">Failed to send reset email !</string>
 </resources>

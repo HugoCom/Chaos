@@ -8,7 +8,6 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -19,8 +18,6 @@ import com.google.firebase.auth.FirebaseUser;
 
 import iut.chaos.R;
 import iut.chaos.model.DataManager;
-import iut.chaos.model.User;
-import iut.chaos.model.UserRole;
 
 public class SignIn extends AppCompatActivity {
 
@@ -35,27 +32,31 @@ public class SignIn extends AppCompatActivity {
 
         auth = FirebaseAuth.getInstance();
 
-        inputEmail = (EditText) findViewById(R.id.input_email);
-        inputPassword = (EditText) findViewById(R.id.input_password);
-        btnSignIn = (Button) findViewById(R.id.btn_signIn);
+        inputEmail = findViewById(R.id.input_email);
+        inputPassword = findViewById(R.id.input_password);
+        btnSignIn = findViewById(R.id.btn_signIn);
     }
 
+    /**
+     * Check if email & password are not empty, password is at least 6 caracteres, and then sign in the user
+     * Show Toast if there are some errors
+     */
     public void signIn(View view) {
         String email = inputEmail.getText().toString().trim();
         final String password = inputPassword.getText().toString().trim();
 
         if (TextUtils.isEmpty(email)) {
-            Toast.makeText(getApplicationContext(), "Enter email address!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), R.string.toast_email, Toast.LENGTH_SHORT).show();
             return;
         }
 
         if (TextUtils.isEmpty(password)) {
-            Toast.makeText(getApplicationContext(), "Enter password!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), R.string.toast_password, Toast.LENGTH_SHORT).show();
             return;
         }
 
         if (password.length() < 6) {
-            Toast.makeText(getApplicationContext(), "Password too short, enter minimum 6 characters!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), R.string.toast_password_length, Toast.LENGTH_SHORT).show();
             return;
         }
 
@@ -68,7 +69,7 @@ public class SignIn extends AppCompatActivity {
                             DataManager.getInstance().readLoggedUser(fbUser);
                             finish();
                         } else {
-                            Toast.makeText(SignIn.this, "Authentication failed." + task.getException(), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(SignIn.this, getString(R.string.toast_authentification_failed) + task.getException(), Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
@@ -78,21 +79,7 @@ public class SignIn extends AppCompatActivity {
         startActivity(new Intent(SignIn.this, ForgotPassword.class));
     }
 
-    // TODO: Bouton vers SignUp
-
-    // Check if the user exist, and then log him
-    /*public void connect(View view) {
-        EditText username = findViewById(R.id.signInMail);
-        EditText password = findViewById(R.id.signInPasswd);
-        TextView error = findViewById(R.id.signInError);
-
-        User user = new User(username.getText().toString(), UserRole.Member, password.getText().toString());
-        // Need to test if user is in the base, else error
-        error.setText(R.string.UserNotInBase);
-
-        Intent intent = new Intent(this, Home.class);
-        // On doit passer l'utilisateur dans l'intent
-        intent.putExtra("UserID", user.getID());
-        startActivity(intent);
-    }*/
+    public void signUpRedirection(View view) {
+        startActivity(new Intent(SignIn.this, SignUp.class));
+    }
 }

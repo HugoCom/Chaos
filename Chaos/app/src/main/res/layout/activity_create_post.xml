@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="42dp"
         android:onClick="createPost"
-        android:text="@string/createPost"
+        android:text="@string/createPost_createPost"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -32,18 +32,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="42dp"
-        android:text="@string/publishPost"
+        android:text="@string/createPost_publishPost"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/text_to_long_error"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/error"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_create_post" />
 
 </android.support.constraint.ConstraintLayout>

@@ -27,7 +27,7 @@ public class Account extends AppCompatActivity {
             finish();
         }
 
-        TextView loggedAs = (TextView) findViewById(R.id.loggedAs);
+        TextView loggedAs = findViewById(R.id.loggedAs);
         loggedAs.setText(user.getEmail());
     }
 

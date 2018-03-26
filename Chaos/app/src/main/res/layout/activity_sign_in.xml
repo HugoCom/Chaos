@@ -36,7 +36,7 @@
         android:id="@+id/btn_signIn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="64dp"
+        android:layout_marginBottom="80dp"
         android:onClick="signIn"
         android:text="@string/signIn_btnSignIn"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -47,9 +47,7 @@
         android:id="@+id/btn_forgotPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:clickable="true"
         android:focusable="true"
         android:onClick="forgotPassword"
@@ -59,13 +57,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_signIn" />
 
-    <!--<TextView
-        android:id="@+id/signInError"
+    <TextView
+        android:id="@+id/btn_signUp_redirection"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/error"
-        app:layout_constraintBottom_toTopOf="@+id/signInConnect"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="signUpRedirection"
+        android:text="@string/signIn_btnSignUpRedirection"
+        android:textColor="@android:color/holo_blue_dark"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signInPasswd" />-->
+        app:layout_constraintTop_toBottomOf="@+id/btn_forgotPassword" />
+
 </android.support.constraint.ConstraintLayout>

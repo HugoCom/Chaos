@@ -26,14 +26,14 @@ public class ForgotPassword extends AppCompatActivity {
 
         auth = FirebaseAuth.getInstance();
 
-        inputEmail = (EditText) findViewById(R.id.input_email);
+        inputEmail = findViewById(R.id.input_email);
     }
 
     public void resetPassword(View v) {
         String email = inputEmail.getText().toString().trim();
 
         if (TextUtils.isEmpty(email)) {
-            Toast.makeText(getApplication(), "Enter your e-mail!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplication(), R.string.toast_email, Toast.LENGTH_SHORT).show();
             return;
         }
 
@@ -42,10 +42,10 @@ public class ForgotPassword extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
                         if (task.isSuccessful()) {
-                            Toast.makeText(ForgotPassword.this, "We have sent you instructions to reset your password!", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(ForgotPassword.this, R.string.toast_reset_instructions, Toast.LENGTH_SHORT).show();
                             finish();
                         } else {
-                            Toast.makeText(ForgotPassword.this, "Failed to send reset email!", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(ForgotPassword.this, R.string.toast_failed_reset_instructions, Toast.LENGTH_SHORT).show();
                         }
                     }
                 });

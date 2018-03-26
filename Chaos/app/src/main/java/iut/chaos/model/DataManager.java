@@ -32,6 +32,10 @@ public class DataManager {
         database = FirebaseDatabase.getInstance().getReference();
     }
 
+    /**
+     * If instance don't exist, create one, else return the instance. [SINGLETON]
+     * @return return instance of DataManager
+     */
     public static DataManager getInstance() {
         if (uniqueInstance == null) {
             uniqueInstance = new DataManager();

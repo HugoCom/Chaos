@@ -34,74 +34,29 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/input_email" />
 
-    <!--<CheckBox
-        android:id="@+id/checkboxConditions"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
-        android:text="@string/register_lbTerms"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/username" />-->
-
     <Button
         android:id="@+id/btn_signUp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="42dp"
-        android:text="@string/signUp_btnSignUp"
+        android:layout_marginBottom="64dp"
         android:onClick="signUp"
+        android:text="@string/signUp_btnSignUp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <!--<Button
-        android:id="@+id/terms"
+    <TextView
+        android:id="@+id/btn_signUp_redirection"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:background="@android:drawable/ic_menu_help"
-        android:onClick="showTerms"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="signInRedirection"
+        android:text="@string/signUp_btnSignInRedirection"
+        android:textColor="@android:color/holo_blue_dark"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkboxConditions" />-->
-
-    <!--<TextView
-        android:id="@+id/wrongP"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:textColor="@color/error"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password" />-->
-
-    <!--<TextView
-        android:id="@+id/wrongU"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/error"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/username" />-->
-
-    <!--<TextView
-        android:id="@+id/wrongC"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/error"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent" />-->
-
-    <!--<TextView
-        android:id="@+id/termsOfServices"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        app:layout_constraintBottom_toTopOf="@+id/createAccount"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/terms" />-->
+        app:layout_constraintTop_toBottomOf="@+id/btn_signUp" />
 
 </android.support.constraint.ConstraintLayout>
