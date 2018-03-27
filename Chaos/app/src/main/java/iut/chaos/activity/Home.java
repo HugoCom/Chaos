@@ -10,6 +10,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ListView;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -38,7 +40,6 @@ public class Home extends AppCompatActivity {
         DatabaseReference ref = DataManager.getInstance().getDatabase().child("posts/");
 
         ref.addChildEventListener(new ChildEventListener() {
-
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
                 for (DataSnapshot postSnapshot: dataSnapshot.getChildren()) {
@@ -47,7 +48,7 @@ public class Home extends AppCompatActivity {
                         break;
                     }
                 }
-                Post p = DataManager.getInstance().createPost(tmp_postText, null);
+                Post p = DataManager.getInstance().createPost(tmp_postText, DataManager.getInstance().getLoggedUser());
                 DataManager.getInstance().addPost(p);
                 adapter.notifyDataSetChanged();
             }
