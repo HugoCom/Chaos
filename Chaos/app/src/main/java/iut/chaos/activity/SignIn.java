@@ -38,7 +38,7 @@ public class SignIn extends AppCompatActivity {
     }
 
     /**
-     * Check if email & password are not empty, password is at least 6 caracteres, and then sign in the user
+     * Check if email & password are not empty, password is at least 6 characters and then sign in the user
      * Show Toast if there are some errors
      */
     public void signIn(View view) {
@@ -69,7 +69,7 @@ public class SignIn extends AppCompatActivity {
                             DataManager.getInstance().readLoggedUser(fbUser);
                             finish();
                         } else {
-                            Toast.makeText(SignIn.this, getString(R.string.toast_authentification_failed) + task.getException(), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(SignIn.this, getString(R.string.toast_authentication_failed) + task.getException(), Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
@@ -81,5 +81,6 @@ public class SignIn extends AppCompatActivity {
 
     public void signUpRedirection(View view) {
         startActivity(new Intent(SignIn.this, SignUp.class));
+        finish();
     }
 }

@@ -26,18 +26,19 @@
     <string name="account_signOut">Déconnexion</string>
 
     <string name="home_addPost">Ajouter un post</string>
-    <string name="home_account">Compte</string>
 
     <string name="createPost_createPost">Publier le Post</string>
     <string name="createPost_publishPost">Entrer le text que vous voulez publier</string>
+    <string name="createPost_hint">Tapez votre texte ici</string>
 
     <string name="toast_email">Veuillez entrer votre email</string>
     <string name="toast_password">Veuillez entrer votre mot de passe</string>
     <string name="toast_password_length">Mot de passe trop court, au moins 6 caractères</string>
-    <string name="toast_authentification_failed">Erreur d\'authentification</string>
+    <string name="toast_authentication_failed">Erreur d\'authentification</string>
     <string name="toast_user_not_logged">Impossible d\'enregistrer l\'utilisateur dans la base de donnée car il n\'est pas enregistré</string>
     <string name="toast_post_to_long_part1">Votre Post est trop long (</string>
     <string name="toast_post_to_long_part2">). 200 caractères maximum</string>
     <string name="toast_reset_instructions">Nous vous avons envoyé les instructions pour changer votre mot de passe !</string>
     <string name="toast_failed_reset_instructions">Erreur dans l\'envoie du mail !</string>
+    <string name="toast_empty_text">Veuillez rentrer du texte</string>
 </resources>

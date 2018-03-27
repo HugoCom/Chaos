@@ -8,7 +8,7 @@ public class PostEvent extends Post{
     private Location eventLocation;
 
     /**
-     * Contructor for a Post with a location
+     * Constructor for a Post with a location
      * @param eventLocation Location for the post
      * @param author Author of the post
      */

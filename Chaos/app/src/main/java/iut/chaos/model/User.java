@@ -3,7 +3,6 @@ package iut.chaos.model;
 import com.google.firebase.database.Exclude;
 
 import java.util.ArrayList;
-import java.util.UUID;
 
 public class User {
     private String id;

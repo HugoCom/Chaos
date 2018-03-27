@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -72,8 +73,8 @@ public class Home extends AppCompatActivity {
             }
         });
 
-        ListView liste = findViewById(R.id.listPost);
-        liste.setAdapter(adapter);
+        ListView list = findViewById(R.id.listPost);
+        list.setAdapter(adapter);
     }
 
     @Override
@@ -118,12 +119,14 @@ public class Home extends AppCompatActivity {
      * Not implemented yet, need to use RecyclerView so that likeButton works
      */
     public void likeButton(View view){
+        Log.i("MYTAG", "Like Button");
     }
 
     /**
      * Not implemented yet, need to use RecyclerView so that unlikeButton works
      */
     public void unlikeButton(View view){
+        Log.i("MYTAG", "Unlike Button");
     }
 
     /**

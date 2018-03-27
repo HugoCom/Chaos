@@ -3,7 +3,6 @@ package iut.chaos.model;
 import android.location.Location;
 
 import com.google.firebase.database.Exclude;
-import com.google.firebase.database.PropertyName;
 
 import java.util.ArrayList;
 import java.util.UUID;

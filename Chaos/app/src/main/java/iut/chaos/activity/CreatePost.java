@@ -2,6 +2,7 @@ package iut.chaos.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -21,7 +22,9 @@ public class CreatePost extends AppCompatActivity {
     public void createPost(View view) {
         EditText text = findViewById(R.id.text_create_post);
 
-        if (text.getText().length() <= 200) {
+        if (TextUtils.isEmpty(text.getText().toString()))
+            Toast.makeText(getApplicationContext(), R.string.toast_empty_text, Toast.LENGTH_SHORT).show();
+        else if (text.getText().length() <= 200) {
             Post p = DataManager.getInstance().createPost(text.getText().toString(), DataManager.getInstance().getLoggedUser());
             DataManager.getInstance().writePost(p);
             finish();

@@ -49,21 +49,21 @@ public class PostAdapter extends ArrayAdapter {
         if (o instanceof PostText) {
             PostText p = (PostText) o;
             ((TextView) toReturn.findViewById(R.id.textPost)).setText(p.getText());
-            ((TextView) toReturn.findViewById(R.id.datePost)).setText("Date");
+            ((TextView) toReturn.findViewById(R.id.datePost)).setText(p.getTimestamp().toString());
             //((TextView) toReturn.findViewById(R.id.cellNote)).setText(String.valueOf(p.getScore()));
         }
 
         if (o instanceof PostMedia) {
             PostMedia p = (PostMedia) o;
             ((TextView) toReturn.findViewById(R.id.textPost)).setText(p.getMedia().getType().toString());
-            ((TextView) toReturn.findViewById(R.id.datePost)).setText("Date");
+            ((TextView) toReturn.findViewById(R.id.datePost)).setText(p.getTimestamp().toString());
             //((TextView) toReturn.findViewById(R.id.cellNote)).setText(String.valueOf(p.getScore()));
         }
 
         if (o instanceof PostEvent) {
             PostEvent p = (PostEvent) o;
             ((TextView) toReturn.findViewById(R.id.textPost)).setText(p.getEventLocation().toString());
-            ((TextView) toReturn.findViewById(R.id.datePost)).setText("Date");
+            ((TextView) toReturn.findViewById(R.id.datePost)).setText(p.getTimestamp().toString());
             //((TextView) toReturn.findViewById(R.id.cellNote)).setText(String.valueOf(p.getScore()));
         }
 

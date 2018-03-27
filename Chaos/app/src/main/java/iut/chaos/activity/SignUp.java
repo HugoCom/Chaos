@@ -64,13 +64,14 @@ public class SignUp extends AppCompatActivity {
                                 Toast.makeText(SignUp.this, R.string.toast_user_not_logged, Toast.LENGTH_SHORT).show();
                             }
                         }
-                        else Toast.makeText(SignUp.this, getString(R.string.toast_authentification_failed) + task.getException(), Toast.LENGTH_SHORT).show();
+                        else Toast.makeText(SignUp.this, getString(R.string.toast_authentication_failed) + task.getException(), Toast.LENGTH_SHORT).show();
                     }
                 });
     }
 
     public void signInRedirection(View view) {
         startActivity(new Intent(SignUp.this, SignIn.class));
+        finish();
     }
 
     //TODO: Terms of Service

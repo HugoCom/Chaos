@@ -26,18 +26,19 @@
     <string name="account_signOut">Logout</string>
 
     <string name="home_addPost">Add a Post</string>
-    <string name="home_account">Account</string>
 
     <string name="createPost_createPost">Publish Post</string>
     <string name="createPost_publishPost">Enter the text you want to publish</string>
+    <string name="createPost_hint">Type your text here</string>
 
     <string name="toast_email">Please enter your email</string>
     <string name="toast_password">Please enter your password</string>
     <string name="toast_password_length">Password too short, should be at least 6 characters</string>
-    <string name="toast_authentification_failed">Authentication failed</string>
-    <string name="toast_user_not_logged">Couldn\'t register user in database because he\'s not logged in</string>
+    <string name="toast_authentication_failed">Authentication failed</string>
+    <string name="toast_user_not_logged">Could not register user in database because he\'s not logged in</string>
     <string name="toast_post_to_long_part1">Your Post is too long (</string>
     <string name="toast_post_to_long_part2">). 200 characters allowed</string>
     <string name="toast_reset_instructions">We have sent you instructions to reset your password !</string>
     <string name="toast_failed_reset_instructions">Failed to send reset email !</string>
+    <string name="toast_empty_text">Please type some text</string>
 </resources>
