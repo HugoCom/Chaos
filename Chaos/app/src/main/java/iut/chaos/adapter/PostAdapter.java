@@ -1,6 +1,7 @@
 package iut.chaos.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -13,6 +14,8 @@ import android.widget.TextView;
 import java.util.List;
 
 import iut.chaos.R;
+import iut.chaos.activity.Cell;
+import iut.chaos.activity.SignIn;
 import iut.chaos.model.PostEvent;
 import iut.chaos.model.PostMedia;
 import iut.chaos.model.PostText;
