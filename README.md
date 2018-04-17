@@ -1,4 +1,4 @@
-##### **[Chaos](Link) is available on the Google Play Store**
+##### **[Chaos](https://play.google.com/store/apps/details?id=iut.chaos) is available on the Google Play Store**
 
 # Chaos
 Chaos application is a proximity social media allowing the members to publish in an anonymous way messages, photos, videos and events. The publications are visible to all the members situated in the same city. It is also possible to comment the publications, and to attribute them a score.
